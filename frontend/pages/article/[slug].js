@@ -15,7 +15,6 @@ const Article = ({ article, categories }) => {
     shareImage: article.attributes.image,
     article: true,
   }
-
   return (
     <Layout categories={categories.data}>
       <Seo seo={seo} />
@@ -43,7 +42,7 @@ const Article = ({ article, categories }) => {
             </div>
             <div className="uk-width-expand">
               <p className="uk-margin-remove-bottom">
-                By {article.attributes.author.name}
+                By {article.attributes.author.data.attributes.name}
               </p>
               <p className="uk-text-meta uk-margin-remove-top">
                 <Moment format="MMM Do YYYY">

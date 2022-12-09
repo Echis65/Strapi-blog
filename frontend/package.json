@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "develop": "next dev",
-    "dev": "next dev",
+    "dev": "next dev -p 3002",
     "build": "next build",
     "start": "next start",
     "deploy": "next build && next export",
